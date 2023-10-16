@@ -1,6 +1,7 @@
 
 .btn {
 
+    &,
     &:link,
     &:visited {
         text-decoration: none;
@@ -23,7 +24,9 @@
 
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform : translateY(-1px);
         box-shadow: 0 5px 10px rgba($color-black, .2);
     }
