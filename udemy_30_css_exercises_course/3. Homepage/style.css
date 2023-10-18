@@ -7,5 +7,120 @@
 }
 body {
   background: #f1f1f1;
-  font-family: roboto, sans-serif;
+  font-family: Montserrat, roboto, sans-serif;
+  background-image: url(./ressources/citynight.jpg);
+  background-size: cover;
+  background-position-y: -150px;
+  padding: 24px 16px;
+}
+
+.nav {
+  color : #fff;
+  width: 100%;
+  margin-top : 70px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__item {
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+}
+
+.nav__item:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.header {
+  margin-top: 18vh;
+  margin-left :44px;
+  color : #fff;
+}
+
+.header .heading-1 {
+  font-size: 104px;
+  text-transform: uppercase;
+}
+
+.header .heading-3 {
+  font-size: 48px;
+}
+
+.start-live {
+  width: 200px;
+  height: 48px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 3px;
+}
+
+.start-live .heading-5 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color : rgba(0, 0, 0, .75);
+}
+.start-live__icon {
+  fill : rgba(0, 0, 0, .75);
+  height: 30px;
+  width: 30px;
+}
+
+.footer {
+  width: 100%;
+  margin-top : 16%;
+}
+
+.footer__icon {
+  background-color: aliceblue;
+  width : 80px;
+  height : 80px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left : 50%;
+  transform : translateX(-50%);
+  z-index: 1;
+}
+
+.footer__icon:hover::after {
+  transform : translateX(-50%);
+  margin-left : 50%;
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  animation: scaleup .5s ease-in-out;
+  z-index: -1000;
+}
+
+@keyframes scaleup {
+  0% {
+    scale : 1;
+    opacity: 0;
+  }
+
+  50% {
+    scale : 1.2;
+    opacity: .7
+  }
+
+  100% {
+    scale : 1.5;
+    opacity: 1;
+  }
 }

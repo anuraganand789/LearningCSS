@@ -4,7 +4,9 @@
 
 /* Nav #1 */
 /* Center the Navlinks on X (horizontally) */
-
+.nav-1 {
+    text-align: center;
+}
 
 
 
@@ -12,17 +14,30 @@
 
 /* Nav #2 */
 /* Center on Y and display the buttons on the right */
+.nav-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-
-
-
-
+.sign-in-btn {
+    display: inline-block;
+    margin-left: auto;
+}
 
 
 /* Nav #3 */
 /* Center on Y then put the icon on the left and the links on the right */
 
+.nav-3 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 
+.nav-3 > img {
+    margin-right: auto;
+}
 
 
 
@@ -33,10 +48,17 @@
 /* Nav #4 */
 /* Center on Y then put the Saturn icon in the middle and the links on the left */
 
+.nav-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-
-
-
+.nav-4 .empty-layout {
+    height : 23px;
+    width : 325px;
+}
 
 
 /* Nav #5 */
@@ -46,3 +68,10 @@
 /* Display the three icons on the right */
 
 
+.nav-5 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
