@@ -7,7 +7,7 @@ nav {
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  /* position ?  */
+  position : fixed; 
 
 }
 
@@ -15,11 +15,12 @@ nav {
 /* Open "exercise2.html" then find out how to perfectly center the ".square" div in ".box". (on X and Y) */
 
 .box {
-
+position: relative;
 }
 
 .square {
   background: violet;
+  position: absolute;
 }
 
 
@@ -31,24 +32,29 @@ Use an offset of "15px" each time, so they don't stick to the edges.
 */
 
 .floating-btn {
-
+position: fixed;
 }
 .b1 {
-
+  top: 15px;
+  left : 15px;
 }
 .b2 {
-
+  top : 15px;
+  right : 15px;
 }
 .b3 {
-
+  left : 15px;
+  bottom : 15px;
 }
 .b4 {
-
+  right : 15px;
+  bottom : 15px;
 }
 
 /* exercise 4 */
 /* Try to shift the ".home-content" div by 100px from the top while remaining in the document flow. */
 
 .home-content {
-
+  position: relative;
+  top: 100px;
 }
