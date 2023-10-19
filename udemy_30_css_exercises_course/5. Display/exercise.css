@@ -3,7 +3,7 @@
 
 
 .box1 p {
-  
+  display: inline;
 }
 
 
@@ -15,6 +15,7 @@
 
 .box2 span {
     transform: rotate(45deg); /* Why it does not work like that ? Try to find out. */
+    display: inline-block;
 
 }
 
@@ -23,7 +24,7 @@
 /* Use flexbox with the ".flex-container" div, but the container should only take the width of the content it contains. */
 
 .flex-container {
-    
+    display: inline-flex;
 }
 
 
@@ -33,5 +34,5 @@
 
 
 .square {
-   
+    display: inline-block;
 }
