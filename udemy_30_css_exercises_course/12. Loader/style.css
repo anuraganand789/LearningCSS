@@ -10,3 +10,51 @@ body {
     background: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.loader {
+  width: 400px;
+  height: 200px;
+}
+
+.circles {
+  margin-left: 100px;
+  margin-top : 100px;
+}
+
+.circle {
+  height : 24px;
+  width: 24px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+@keyframes jumpUp {
+  0% {
+    transform: translateY(-10px);
+  }
+  
+  50% {
+    transform: translateY(-30px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.circle-1 {
+  background-color: red;
+  animation: jumpUp .7s ease-in infinite;
+  
+}
+.circle-2 {
+  background-color : green;
+  animation: jumpUp .7s ease-in .1s infinite;
+  
+}
+
+.circle-3 {
+  background-color : blue;
+  animation: jumpUp .7s ease-in .2s infinite;
+  
+}
