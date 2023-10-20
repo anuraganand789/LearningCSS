@@ -23,7 +23,8 @@ h1 {
 /* Flex galery */
 
 .galerie {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item {
