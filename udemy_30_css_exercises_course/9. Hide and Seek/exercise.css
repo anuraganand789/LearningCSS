@@ -3,7 +3,7 @@
 / * You can test the click on the paragraphs thanks to the script at the bottom of the index.html */
 
 .p1 {
-
+    opacity: 0;
 }
 
 
@@ -11,7 +11,7 @@
 
 
 .p2 {
-  
+    visibility: hidden;
 }
 
 
@@ -19,5 +19,5 @@
 
 
 .p3 {
- 
+    display: none;
 }
