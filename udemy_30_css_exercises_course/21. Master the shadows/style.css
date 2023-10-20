@@ -32,6 +32,7 @@ body {
     font-size: calc(6vmin + 5px);
     font-weight: 300;
     color: #f1f1f1e3;
+    text-transform: uppercase;
 }
 
 
@@ -48,7 +49,82 @@ body {
     bottom: -10vmin;
     right: -5vmin;
     width: 25vmin; 
+    filter: 
+    drop-shadow(0 0.15vw 0.30vw #fffb03)
+    drop-shadow(0 0.15vw 0.30vw #8a8942);
+
+    animation: Blink-Image 1.5s infinite alternate;
 }
 
+.blue-shadow {
+    box-shadow: 
+    1px 2px 21px 2px blue, 
+    -1px -2px 21px 2px blue;
+}
 
+.blue-text-shadow {
+    text-shadow: 
+    1px 2px 21px blue,
+    1px 2px 21px blue,
+    1px 2px 21px blue,
+    1px 2px 21px blue,
+    1px 2px 21px blue;
 
+    animation: Blue-Blink 2s infinite alternate;
+}
+
+.text-shadow--red {
+    text-shadow: 
+    1px 2px 5px red,
+    1px 2px 5px red,
+    1px 2px 5px red,
+    1px 2px 5px red,
+    1px 2px 5px red;
+    animation: Red-Blink 1.3s infinite alternate;
+}
+
+@keyframes Blue-Blink {
+    0%, 18%, 22%, 53%, 57%, 100% {
+        text-shadow: 
+            1px 2px 5px blue,
+            1px 2px 5px blue,
+            1px 2px 5px blue,
+            1px 2px 5px blue,
+            1px 2px 5px blue;
+        ;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes Red-Blink {
+    0%, 18%, 22%, 53%, 57%, 100% {
+        text-shadow: 
+            1px 2px 5px red,
+            1px 2px 5px red,
+            1px 2px 5px red,
+            1px 2px 5px red,
+            1px 2px 5px red;
+        ;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes Blink-Image {
+    0%, 18%, 22%, 53%, 57%, 100% {
+        filter: 
+        drop-shadow(0 0.15vw 0.30vw #fffb03)
+        drop-shadow(0 0.15vw 0.30vw #8a8942);;
+    }
+
+    20%, 24%, 55% {
+        filter : 
+        drop-shadow(0 0.15vw 0.30vw #e9e8a6)
+        drop-shadow(0 0.15vw 0.30vw #dfdd72);;
+    }
+}
